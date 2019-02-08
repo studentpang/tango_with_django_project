@@ -9,7 +9,7 @@
 {% block body_block %}
 	<div>
 	<h1>Add a Page</h1>
-	{%if cat%}
+	{%if category%}
 		<form id="page_form" method="post" action="/rango/category/{{category.slug}}/add_page/">
 			{%csrf_token%}
 			{%for hidden in form.hidden_fields%}
